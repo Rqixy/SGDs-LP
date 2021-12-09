@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+1:wght@500;600&family=Shippori+Mincho&display=swap');
+
+
+/********************************************
+* General
+*********************************************/
+body {
+    font-family: "Kosugi Maru", sans-serif;
+
+}
+section {
+    padding: 67px;
+}
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    padding: 67px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 0 8px gray;
+}
+.inner {
+    width: 100%;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+h3, h4{
+    font-family: 'M PLUS 1', sans-serif;
+}
+p {
+    font-size: 20px;
+    line-height: 1.7em;
+}
+
+/********************************************
+* Header
+*********************************************/
+header {
+    position: relative;
+    font-family: "Shippori Mincho", serif;
+    background-image: url('../images/SDGsHeader.jpg');
+    background-size: cover; 
+    height: 100vh;
+}
+h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 34px;
+}
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+}
+a {
+    text-decoration: none;
+}
+/********************************************
+* Main
+*********************************************/
+
+/* Section1 */
+#section1 {
+    background: #FFFFCC;
+    max-height: 750px;
+    text-align: center;
+}
+
+#section1 p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Section2 */
+#section2 {
+    background: #D6FFFD;
+    text-align: center;
+}
+.sdgs-title {
+    width: 100%;
+    margin-bottom: 30px;
+}
+#section2 h3 {
+    font-size: 25px;
+}
+#section2 p {
+    width: 90%;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.sdgs-list {
+    width: 100%;
+}
+/* Section3 */
+#section3 {
+    background: #E0FFDE;
+}
+.sdgs-image {
+    width: 335px;
+    height: 223px;
+    object-fit: cover;
+}
+.sdgs-icon {
+    width: 67px;
+}
+
+/* Summarize */
+#summarize {
+    background: #FFBCD1;
+}
+
+/********************************************
+* Footer
+*********************************************/
+footer {
+    background: #3E3E3E;
+    color: white;
+}
+.link-icon {
+    color: white;
+}
