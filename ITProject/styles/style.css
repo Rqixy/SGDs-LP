@@ -9,9 +9,11 @@ body {
     font-family: "Kosugi Maru", sans-serif;
 
 }
+
 section {
     padding: 67px;
 }
+
 .container {
     max-width: 800px;
     width: 100%;
@@ -21,20 +23,55 @@ section {
     border-radius: 30px;
     box-shadow: 0 0 8px gray;
 }
+
 .inner {
     width: 100%;
     margin: 0 auto;
 }
+
+h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
 h3 {
     font-size: 40px;
     margin-bottom: 30px;
 }
+
 h3, h4{
     font-family: 'M PLUS 1', sans-serif;
 }
+
 p {
     font-size: 20px;
     line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sdgs-title {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sdgs-list {
+    width: 100%;
+}
+
+.sdgs-image {
+    width: 335px;
+    height: 223px;
+    object-fit: cover;
+}
+.sdgs-icon {
+    width: 67px;
 }
 
 /********************************************
@@ -47,13 +84,7 @@ header {
     background-size: cover; 
     height: 100vh;
 }
-h1 {
-    font-size: 90px;
-    margin-bottom: 20px;
-}
-h2 {
-    font-size: 34px;
-}
+
 .header-title {
     position: absolute;
     top: 50%;
@@ -62,9 +93,7 @@ h2 {
     text-align: center;
     width: 60%;
 }
-a {
-    text-decoration: none;
-}
+
 /********************************************
 * Main
 *********************************************/
@@ -75,7 +104,6 @@ a {
     max-height: 750px;
     text-align: center;
 }
-
 #section1 p {
     width: 90%;
     margin: 0 auto;
@@ -86,10 +114,6 @@ a {
     background: #D6FFFD;
     text-align: center;
 }
-.sdgs-title {
-    width: 100%;
-    margin-bottom: 30px;
-}
 #section2 h3 {
     font-size: 25px;
 }
@@ -99,25 +123,49 @@ a {
     margin: 0 auto;
     margin-bottom: 60px;
 }
-.sdgs-list {
-    width: 100%;
-}
+
 /* Section3 */
 #section3 {
     background: #E0FFDE;
 }
-.sdgs-image {
-    width: 335px;
-    height: 223px;
-    object-fit: cover;
+#section3 h3 {
+    text-align: center;
+    margin-bottom: 60px;
 }
-.sdgs-icon {
-    width: 67px;
+.item-container-right,
+.item-container-left {
+    margin-bottom: 36px;
 }
 
 /* Summarize */
 #summarize {
     background: #FFBCD1;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.summarize-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#summarize p {
+    color: white;
+    margin-bottom: 130px;
+}
+.other-item-btn {
+    background: white;
+    font-size: 20px;
+    color: #FF417D;
+    border-radius: 100vh;
+    padding: 20px 100px;
+    border: 1px solid #FF417D;
+}
+.other-item-btn:hover {
+    background: #ff417d;
+    color: white;
+    transition: all .5s;
 }
 
 /********************************************
@@ -126,7 +174,16 @@ a {
 footer {
     background: #3E3E3E;
     color: white;
+    text-align: center;
+}
+.link-icons {
+    padding-top: 60px;
 }
 .link-icon {
     color: white;
+    font-size: 25px;
+    margin: 0 20px 10px;
+}
+.link-icon:hover {
+    color: #3E3E3E;
 }
