@@ -15,10 +15,10 @@ section {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     background: white;
-    padding: 67px;
+    padding: 60px;
     margin: 0 auto;
     border-radius: 30px;
     box-shadow: 0 0 8px gray;
@@ -30,17 +30,21 @@ section {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 100px;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 40px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 30px;
 }
 
 h3, h4{
@@ -66,12 +70,12 @@ a {
 }
 
 .sdgs-image {
-    width: 335px;
-    height: 223px;
+    width: 350px;
+    height: 240px;
     object-fit: cover;
 }
 .sdgs-icon {
-    width: 67px;
+    width: 80px;
 }
 
 /********************************************
@@ -115,11 +119,11 @@ header {
     text-align: center;
 }
 #section2 h3 {
-    font-size: 25px;
+    font-size: 30px;
 }
 #section2 p {
     width: 90%;
-    font-size: 17px;
+    font-size: 20px;
     margin: 0 auto;
     margin-bottom: 60px;
 }
@@ -132,9 +136,59 @@ header {
     text-align: center;
     margin-bottom: 60px;
 }
-.item-container-right,
-.item-container-left {
+.item-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 36px;
+}
+.item-explain {
+    max-width: 400px;
+    width: 100%;
+}
+.item-explain h4 {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.item-explain p {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 12px;
+}
+.item-right {
+    margin-right: 30px;
+}
+.item-left {
+    margin-left: 30px;
+}
+.icon-button-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.page-button-inner {
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn {
+    background: white;
+    font-size: 12px;
+    color: black;
+    border-radius: 100vh;
+    padding: 16px 50px;
+    border: 1px solid #15FC06;
+    transition: all .5s;
+}
+.btn:hover {
+    background: #15FC06;
+    color: white;
+    transition: all .5s;
+}
+.btn:first-child {
+    margin-bottom: 10px;
 }
 
 /* Summarize */
@@ -149,9 +203,11 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 #summarize p {
     color: white;
+    font-size: 25px;
     margin-bottom: 130px;
 }
 .other-item-btn {
@@ -161,6 +217,7 @@ header {
     border-radius: 100vh;
     padding: 20px 100px;
     border: 1px solid #FF417D;
+    transition: all .5s;
 }
 .other-item-btn:hover {
     background: #ff417d;
@@ -186,6 +243,6 @@ footer {
     transition: all .5s;
 }
 .link-icon:hover {
-    transition: all .5s;
     opacity: .5;
+    transition: all .5s;
 }
