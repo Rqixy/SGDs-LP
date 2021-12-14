@@ -21,7 +21,7 @@ section {
     padding: 60px;
     margin: 0 auto;
     border-radius: 30px;
-    box-shadow: 0 0 8px gray;
+    box-shadow: 0 0 20px gray;
 }
 
 .inner {
@@ -84,8 +84,8 @@ a {
 header {
     position: relative;
     font-family: "Shippori Mincho", serif;
-    background-image: url('../images/SDGsHeader.jpg');
-    background-size: cover; 
+    background: url('../images/SDGsHeader.jpg') no-repeat center center;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -95,7 +95,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 60%;
+    width: 100%;
 }
 
 /********************************************
@@ -245,4 +245,68 @@ footer {
 .link-icon:hover {
     opacity: .5;
     transition: all .5s;
+}
+
+
+/********************************************
+* Responsive
+*********************************************/
+
+@media screen and (max-width: 1000px) {
+    /* General */
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    /* Section2 */
+    /* Section3 */
+    /* Summarize */
+    /* Footer */
+}
+
+@media screen and (max-width: 750px) {
+    /* General */
+    .container {
+        max-width: 1000px;
+        width: 100%;
+        background: white;
+        padding: 40px 20px;
+        margin: 0 auto;
+        border-radius: 30px;
+        box-shadow: none;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.3em;
+    }
+    .sdgs-title {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Section1 */
+    section {
+        padding: 30px 15px;
+    }
+    
+    /* Section2 */
+    /* Section3 */
+    /* Summarize */
+    /* Footer */
 }
