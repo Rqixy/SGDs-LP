@@ -5,6 +5,10 @@
 /********************************************
 * General
 *********************************************/
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: "Kosugi Maru", sans-serif;
 
@@ -30,21 +34,21 @@ section {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 10rem;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 5rem;
     margin-bottom: 30px;
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 h3, h4{
@@ -52,7 +56,7 @@ h3, h4{
 }
 
 p {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.7em;
 }
 
@@ -84,9 +88,10 @@ a {
 header {
     position: relative;
     font-family: "Shippori Mincho", serif;
-    background: url('../images/SDGsHeader.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
+}
+
+header img {
+    width: 100%;
 }
 
 .header-title {
@@ -105,7 +110,6 @@ header {
 /* Section1 */
 #section1 {
     background: #FFFFCC;
-    max-height: 750px;
     text-align: center;
 }
 #section1 p {
@@ -119,11 +123,11 @@ header {
     text-align: center;
 }
 #section2 h3 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 #section2 p {
     width: 90%;
-    font-size: 20px;
+    font-size: 2rem;
     margin: 0 auto;
     margin-bottom: 60px;
 }
@@ -149,12 +153,12 @@ header {
 }
 .item-explain h4 {
     width: 100%;
-    font-size: 22px;
+    font-size: 2.2rem;
     text-align: center;
     margin-bottom: 12px;
 }
 .item-explain p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5em;
     margin-bottom: 12px;
 }
@@ -175,7 +179,7 @@ header {
 }
 .btn {
     background: white;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: black;
     border-radius: 100vh;
     padding: 16px 50px;
@@ -194,25 +198,19 @@ header {
 /* Summarize */
 #summarize {
     background: #FFBCD1;
-    height: 100vh;
     text-align: center;
-    position: relative;
 }
 .summarize-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    /*  */
 }
 #summarize p {
     color: white;
-    font-size: 25px;
+    font-size: 2.5rem;
     margin-bottom: 130px;
 }
 .other-item-btn {
     background: white;
-    font-size: 20px;
+    font-size: 2rem;
     color: #FF417D;
     border-radius: 100vh;
     padding: 20px 100px;
@@ -238,7 +236,7 @@ footer {
 }
 .link-icon {
     color: white;
-    font-size: 25px;
+    font-size: 2.5rem;
     margin: 0 20px 10px;
     transition: all .5s;
 }
@@ -254,13 +252,17 @@ footer {
 
 @media screen and (max-width: 1000px) {
     /* General */
-    h1 {
-        font-size: 80px;
+    html {
+        font-size: 8px;
     }
-    h2 {
-        font-size: 30px;
+    h1 {
+        margin-bottom: 10px;
     }
 
+    /* Header */
+    header {
+
+    }
     /* Section2 */
     /* Section3 */
     /* Summarize */
@@ -269,6 +271,9 @@ footer {
 
 @media screen and (max-width: 750px) {
     /* General */
+    html {
+        font-size: 5px;
+    }
     .container {
         max-width: 1000px;
         width: 100%;
@@ -279,20 +284,16 @@ footer {
         box-shadow: none;
     }
     h1 {
-        font-size: 50px;
+        font-size: 7rem;
+        margin-bottom: 5px;
     }
     h2 {
-        font-size: 20px;
+        font-size: 3rem;
     }
     h3 {
-        font-size: 25px;
         margin-bottom: 15px;
     }
-    h4 {
-        font-size: 15px;
-    }
     p {
-        font-size: 15px;
         line-height: 1.3em;
     }
     .sdgs-title {
