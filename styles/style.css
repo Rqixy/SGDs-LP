@@ -75,8 +75,9 @@ a {
 
 .sdgs-image {
     width: 35rem;
-    height: 24rem;
-    object-fit: cover;
+    /* object-fit: contain; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
 }
 .sdgs-icon {
     width: 8rem;
@@ -91,6 +92,7 @@ header {
 }
 
 header img {
+    display: block;
     width: 100%;
 }
 
@@ -148,7 +150,7 @@ header img {
     margin-bottom: 3.6rem;
 }
 .item-explain {
-    max-width: 400px;
+    max-width: 380px;
     width: 100%;
 }
 .item-explain h4 {
@@ -255,56 +257,70 @@ footer {
     html {
         font-size: 8px;
     }
+    .sdgs-icon {
+        width: 13rem;
+    }
     /* Section3 */
+    .delete {
+        display: none;
+    }
+    .br {
+        display: block;
+    }
     .item-container {
         width: 100%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-direction: column;
         margin-bottom: 3.6rem;
     }
     .item-explain {
-        max-width: 400px;
-        width: 100%;
+        max-width: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 3.6rem;
     }
     .item-explain h4 {
-        width: 100%;
-        font-size: 2.2rem;
+        font-size: 4rem;
         text-align: center;
-        margin-bottom: 1.2rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
     }
     .item-explain p {
-        font-size: 1.6rem;
-        line-height: 1.5em;
-        margin-bottom: 1.2rem;
+        margin: 0 auto;
+        width: 80%;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .item-explain p span {
+        display: inline-block;
+    }
+    .sdgs-image {
+        order: 2;
+        margin: 0 auto;
+        Width: 80%;
     }
     .item-right {
-        margin-right: 3rem;
+        margin-right: none;
     }
     .item-left {
-        margin-left: 3rem;
+        order: 1;
+        margin-left: none;
     }
     .icon-button-inner {
         display: flex;
-        justify-content: space-between;
-    }
-    .page-button-inner {
-        display: flex;
-        flex-direction: column;
-        
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 5rem;
     }
     .btn {
         background: white;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: black;
         border-radius: 100vh;
-        padding: 1.6rem 5rem;
+        padding: 2rem 6rem;
         border: 1px solid #15FC06;
-        transition: all .5s;
-    }
-    .btn:hover {
-        background: #15FC06;
-        color: white;
         transition: all .5s;
     }
     .btn:first-child {
@@ -319,13 +335,16 @@ footer {
     }
 
     /* Section3 */
-
+    
 }
 
 @media screen and (max-width: 500px) {
     /* General */
     html {
         font-size: 5px;
+    }
+    .sdgs-icon {
+        width: 10rem;
     }
     .container {
         max-width: 1000px;
@@ -334,7 +353,6 @@ footer {
         padding: 40px 20px;
         margin: 0 auto;
         border-radius: 30px;
-        box-shadow: none;
     }
     h1 {
         font-size: 7rem;
@@ -348,10 +366,14 @@ footer {
     }
     .sdgs-title {
         width: 100%;
-        /* margin-bottom: 15px; */
+        height: 100%;
+        margin-bottom: 15px;
     }
 
     /* Section3 */
+    .item-explain h4 {
+        font-size: 3rem;
+    }
     /* Summarize */
     #summarize {
         padding: 10rem 0;
