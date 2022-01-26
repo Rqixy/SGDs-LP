@@ -388,3 +388,49 @@ footer {
         margin-bottom: 3rem;
     }
 }
+
+/********************************************
+* Javascript
+*********************************************/
+/* start-fade-in */
+.logo_fadein{
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
+.logo_fadein p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+/* scroll-fade-in */
+.fade-in {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+}
+.fade-in-up {
+    transform: translate(0, 50px);
+}
+.fade-in-down {
+    transform: translate(0, -50px);
+}
+.fade-in-left {
+    transform: translate(-50px, 0);
+}
+.fade-in-right {
+    transform: translate(50px, 0);
+}
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
