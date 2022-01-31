@@ -8,16 +8,12 @@
 html {
     font-size: 10px;
 }
-
 body {
     font-family: "Kosugi Maru", sans-serif;
-
 }
-
 section {
     padding: 6.7rem;
 }
-
 .container {
     max-width: 1000px;
     width: 100%;
@@ -27,40 +23,32 @@ section {
     border-radius: 30px;
     box-shadow: 0 0 20px gray;
 }
-
 .inner {
     width: 100%;
     margin: 0 auto;
 }
-
 h1 {
     font-size: 10rem;
     margin-bottom: 2rem;
 }
-
 h2 {
     font-size: 4rem;
 }
-
 h3 {
     font-size: 5rem;
     margin-bottom: 3rem;
 }
-
 h4 {
     font-size: 3rem;
 }
-
 h3, h4{
     font-family: 'M PLUS 1', sans-serif;
     font-weight: bold;
 }
-
 p {
     font-size: 2rem;
     line-height: 1.7em;
 }
-
 a {
     text-decoration: none;
 }
@@ -72,12 +60,10 @@ header {
     position: relative;
     font-family: "Shippori Mincho", serif;
 }
-
 header img {
     display: block;
     width: 100%;
 }
-
 .header-title {
     position: absolute;
     top: 50%;
@@ -358,9 +344,11 @@ footer {
 }
 
 @media screen and (max-width: 440px) {
+    /* General */
     h1 {
         font-size: 8rem;
     }
+
     /* Section3 */
     .item-explain p {
         font-size: 2rem;
@@ -392,8 +380,8 @@ footer {
 /********************************************
 * Javascript
 *********************************************/
-/* start-fade-in */
-.logo_fadein{
+/* logo-fade-in */
+.logo-fade-in{
 	background: #FFF;
 	position: fixed;
 	top: 0;
@@ -402,7 +390,7 @@ footer {
 	width: 100%;
 	z-index: 999;
 }
-.logo_fadein p {
+.logo-fade-in p {
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -410,6 +398,13 @@ footer {
 	display: none;
 	z-index: 9999;
 	width: 280px;
+}
+.logo-fade-in p img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
 }
 
 /* scroll-fade-in */
@@ -433,31 +428,4 @@ footer {
 .scroll-in {
     opacity: 1;
     transform: translate(0, 0);
-}
-
-.logo_fadein{
-	background: rgb(255, 255, 255);
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 999;
-}
-.logo_fadein p {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	display: none;
-	z-index: 9999;
-	width: 280px;
-}
-
-.logo_fadein p img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40rem;
 }
