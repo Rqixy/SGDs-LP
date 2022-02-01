@@ -99,7 +99,7 @@ header img {
     width: 90%;
     font-size: 2rem;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 .sdgs-title {
     width: 100%;
@@ -284,7 +284,7 @@ footer {
     }
     .icon-button-inner {
         width: 80%;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
     .btn {
         font-size: 1.5rem;
@@ -324,12 +324,22 @@ footer {
         line-height: 1.3em;
     }
 
+    /* Section2 */
+    #section2 p {
+        margin-bottom: 2rem;
+    }
+
     /* Section3 */
     #section3 h3 {
         margin-bottom: 0;
     }
     .item-explain h4 {
         font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .icon-button-inner {
+        margin-bottom: 1rem;
     }
     
     /* Summarize */
@@ -372,7 +382,7 @@ footer {
         margin-bottom: 0;
     }
     .sdgs-icon {
-        width: 10rem;
+        width: 8rem;
         margin-bottom: 3rem;
     }
 }
